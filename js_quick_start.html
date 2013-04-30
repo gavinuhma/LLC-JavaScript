@@ -63,7 +63,7 @@
       	<img src="assets/planet-robots.jpg" alt="planet-robots" />
       </div>
     </article>
-    
+
     <!-- SLIDE: EXERCISE OVERVIEW -->
     <article class='slide slide-list'>
       <h2>JavaScript Exercise Overview</h2>
@@ -71,129 +71,137 @@
       <p>You'll want to do things like offer online shopping and print shipping labels!</p>
       <p>You'll also want to make sure that everything works properly as well.</p>
       <p>That means customers can't submit empty forms and product totals are calculated properly in their shopping carts.</p>
-      <p>In order to create a website that can handle these requirements, we will need to learn how to use <span class="keyword">functions</span>, <span class="keyword">variables</span>, and <span class="keyword">conditionals</span>.</p>
+      <p>In order to create a website that can handle these requirements, we will need to learn how to use
+      <span class="keyword">variables</span> and <span class="keyword">operators</span>.</p>
     </article>
 
-    <!-- SLIDE: INTRO TO FUNCTIONS -->
+    <!-- SLIDE: PART 1 INTRO -->
     <article class='slide slide-list'>
-      <h2>Intro to Functions</h2>
-      <p>
-        What is something that you do that's very repetitive or a hassle? Wouldn't it be great if it was automated? Or at least hidden away?
-      </p>
-      <table width="100%">
-        <tr>
-          <th colspan="2" height="50" align="left" style="font-size:28px;">Paying for parking:</th>
-        </tr>
-        <tr>
-          <th width="50%" align="left" style="font-size:24px;">
-            The old way
-            <img src="assets/thumb-down.png" alt="thumb-down" width="32" height="32" style="float:left;margin-bottom:0;padding-right:5px;" />
-          </th>
-          <th width="50%" align="left" style="font-size:24px;">
-            The improved way
-            <img src="assets/thumb-up.png" alt="thumb-up" width="32" height="32" style="float:left;margin-bottom:0;padding-right:5px;" />
-          </th>
-        </tr>
-        <tr>
-          <td style="padding-top: 20px;">
-            <ol>
-              <li>Find bank machine</li>
-              <li>Pull out bank card</li>
-              <li>Get money out from ATM</li>
-              <li>Buy chips so you can make change</li>
-              <li>Put change into machine</li>
-              <li>Take receipt</li>
-            </ol>
-          </td>
-          <td style="padding-top: 20px;">
-            <ol>
-              <li>Pull the PayPass credit card from your wallet</li>
-              <li>Tap</li>
-              <li>Take receipt</li>
-            </ol>
-          </td>
-        </tr>
-      </table>
+      <h2>JavaScript, meet HTML</h2>
+      <p>JavaScript can <strong>modify</strong> HTML</p>
+      <p>JavaScript can <strong>add</strong> HTML</p>
+      <p>JavaScript can <strong>remove</strong> HTML</p>
+      <p>JavaScript can <strong>animate</strong> HTML</p>
     </article>
 
-    <!-- SLIDE: INTRO TO FUNCTIONS cont -->
+    <!-- SLIDE: JavaScript Meet HTML -->
     <article class='slide slide-list'>
-      <h2>Intro to Functions</h2>
-      <p>
-        In the improved way, we can think of step 2 as a function.  We can't see all the steps that happen but we know that if we perform the action of tapping the card, it will execute some instructions that will allow us to pay with the card.
-      </p>
-      <table width="100%">
-        <tr>
-          <th width="50%" align="left" style="font-size:24px;">
-            The improved way
-            <img src="assets/thumb-up.png" alt="thumb-up" width="32" height="32" style="float:left;margin-bottom:0;padding-right:5px;" />
-          </th>
-        </tr>
-        <tr>
-          <td style="padding-top: 20px;">
-            <ol>
-              <li>Pull the PayPass credit card from your wallet</li>
-              <li class="highlight">Tap</li>
-              <li>Take receipt</li>
-            </ol>
-          </td>
-        </tr>
-      </table>
-    </article>
-
-    <!-- SLIDE: INTRO TO FUNCTIONS cont -->
-    <article class='slide slide-list'>
-      <h2>Intro to Functions</h2>
-      <br />
-      <p><span class="keyword">Functions</span> are used to make the code "do things."</p>
-      <p>To get the function to execute, you have to <strong>call the function</strong>  by using the function name followed by round brackets.</p>
-      <p>If the credit card tap was a function in JavaScript, it could look something like this:</p>
-      <p><code>tapCard()</code></p>
-    </article>
-
-    <article class='slide slide-list'>
-      <h2>Intro to Functions</h2>
-      <p>We can create our own functions but there are already some handy ones built into JavaScript. There are three functions that are useful for testing and writing code.</p>
-      <p>
-        <code>prompt()</code> and <code>alert()</code> show popups in the browser.
-        <code>document.write()</code> outputs text onto the page, aka the <strong>document</strong>.
-      </p>
+      <h2>JavaScript, meet HTML</h2>
+      <p>JavaScript can modify HTML</p>
+      <p>Try it, click the <strong>Run</strong> button:</p>
 <textarea class='coder-editor coder-editor-full'>SCRIPT
-
-  alert("This is an alert box.");
-  prompt("This is a prompt box. Enter some info.");
-  document.write("document.write outputs text into the page.");
-
+document.body.innerHTML = 'Hi!';
 SCRIPTEND</textarea>
     </article>
 
-    <!-- SLIDE: COMMENTS -->
+    <!-- SLIDE:  -->
     <article class='slide slide-list'>
-      <h2>Comments</h2>
-      <p>
-        Sometimes you want to write notes to yourself (and others!!) to organize blocks of code or leave explanations. Use comments! <strong>JavaScript will ignore comments and not execute them.</strong>
-      </p>
-<pre class='prettyprint'>
-// This is how you leave a single line comment.
-
-// You can write many single line comments.
-// Just make sure to add the double slash
-// for every new line.
-</pre>
-      <p>Here's another way to comment larger blocks of text.</p>
-<pre class='prettyprint'>
-/* This is how you leave
-multi-line comments for when you
-want to write a longer message */
-</pre>
-      <p>Multi-line comments are great for "hiding" large blocks of code so you can try something new without erasing your old code.</p>    
+      <h2>JavaScript, meet HTML</h2>
+      <p>If we <strong>view source</strong> on the page, we'll see HTML like below.</p>
+      <p>Whatever was in the body before has been completely replaced!</p>
+<textarea class='coder-editor coder-editor-full'>
+<html>
+  <head></head>
+  <body>Hi!</body>
+</html>
+</textarea>
     </article>
-   
+
+    <!-- SLIDE:  -->
+    <article class='slide slide-list'>
+      <h2>JavaScript, meet HTML</h2>
+      <p>Try it on <a href="http://www.google.com/" target="_blank">Google</a>.
+      <p>Your mentor will show you how to open up the <strong>JavaScript Console</strong> (Opt+Cmd+j on mac, Alt+Ctrl+j on pc)</p>
+      <p>Then paste this code:</p>
+      <pre class="prettyprint">document.body.innerHTML = 'Hi!';</pre>
+    </article>
+
+    <!-- SLIDE:  -->
+    <article class='slide slide-list'>
+      <h2>JavaScript, meet HTML</h2>
+      <div>
+        <p>See how <strong>document.body.innerHTML</strong> relates to the <strong>HTML</strong>?</p>
+      </div>
+<textarea class='coder-editor coder-editor-full'>
+<!-- `document` is the entire page -->
+
+<html>
+  <head></head>
+  <!-- `document.body` is the body -->
+  <body>
+    <!-- `document.body.innerHTML` is the HTML in the body -->
+    Hi!
+  </body>
+</html>
+</textarea>
+    </article>
+
+    <!-- SLIDE:  -->
+    <article class='slide slide-list'>
+      <h2>JavaScript, meet HTML</h2>
+      <p>We can add a bunch of HTML using <strong>innerHTML</strong>.</p>
+      <p>Try adding your name along with some more HTML tags below:</p>
+<textarea class='coder-editor coder-editor-full'>SCRIPT
+document.body.innerHTML = '<div><u>Hi!</u></div>';
+SCRIPTEND</textarea>
+    </article>
+
+
+    <!-- SLIDE:  -->
+    <article class='slide slide-list'>
+      <h2>Assignment Operators (<a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Assignment_Operators" target="_blank">Reference</a>)</h2>
+      <p><strong>Assignment Operators</strong>,
+        like equals (<code>=</code>), assign whatever is on the right to whatever is on the left.</p>
+      <pre class='prettyprint'>document.body.innerHTML = "Hi!";</pre>
+      <p>Read the above statement like this:</p>
+      <p><strong>document dot body dot innerHTML equals Hi!</strong></p>
+    </article>
+
+
+    <!-- SLIDE:  -->
+    <article class='slide slide-list'>
+      <h2>Assignment Operators (<a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Assignment_Operators" target="_blank">Reference</a>)</h2>
+      <p>Remember that the left hand side gets completely replaced.</p>
+      <p>In the example below, the body will only contain "morning",
+        since the second statement completely replaces whatever was there before.</p>
+      <p>Try running this code:</p>
+<textarea class='coder-editor coder-editor-full'>SCRIPT
+document.body.innerHTML = 'good';
+document.body.innerHTML = 'morning';
+SCRIPTEND</textarea>
+    </article>
+
+
+    <!-- SLIDE:  -->
+    <article class='slide slide-list'>
+      <h2>Assignment Operators (<a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Assignment_Operators" target="_blank">Reference</a>)</h2>
+      <p>Rather than replacing the body with "morning" we can append.</p>
+      <p>To do that we would use <strong>plus equals</strong> (<code>+=</code>).</p>
+      <p>The plus equals assignment operator adds the right side to the left.</p>
+<textarea class='coder-editor coder-editor-full'>SCRIPT
+document.body.innerHTML = 'good';
+document.body.innerHTML += 'morning';
+SCRIPTEND</textarea>
+    </article>
+
+
+    <!-- SLIDE:  -->
+    <article class='slide slide-list'>
+      <h2>JavaScript, meet HTML</h2>
+      <p>Now we'll add in some HTML again.</p>
+      <p>Play around with the code below, add some more HTML and a few extra lines of statements</p>
+<textarea class='coder-editor coder-editor-full'>SCRIPT
+document.body.innerHTML = '<h1>Good Morning</h1>';
+document.body.innerHTML += '<div>I hope you are ready to code</div>';
+SCRIPTEND</textarea>
+    </article>
+
+
     <!-- SLIDE: VARIABLES -->
     <article class='slide slide-list'>
       <h2>Variables</h2>
       <br />
-      <p><span class="keyword">Variables</span> are like containers or a box. They are used to <strong>store values</strong> so you can use them later on, when you need them.</p>
+      <p><span class="keyword">Variables</span> are used to <strong>store values</strong> so you can use them later.</p>
       <p class="centered"><img src="assets/storage_boxes.png" /></p>
     </article>
 
@@ -201,53 +209,14 @@ want to write a longer message */
     <article class='slide slide-list'>
       <h2>Variables How-to</h2>
       <p><span class="keyword">Declare</span> variables with the keyword <strong><code>var</code></strong>.</p>
-      <pre class='prettyprint'>var email;</pre>
-      <p><span class="keyword">Assign</span> a value to the variable using the equals (<code>=</code>) sign.</p>
-      <pre class='prettyprint'>email = "hello@christinatruong.com";</pre>
-      <p>Now the computer will remember my email address!</p>
+      <pre class='prettyprint'>var twitter;</pre>
+      <p><span class="keyword">Assign</span> a value to the variable using the equals (<code>=</code>) operator.</p>
+      <pre class='prettyprint'>twitter = "@gavinuhma";</pre>
+      <p>Now the computer will remember my twitter!</p>
       <div class="reminders">
         <p>Take note that the value of the variable is written between quotes.<br />
         More on this soon.</p>
       </div>
-    </article>
-
-    <!-- SLIDE: VARIABLES (cont'd) -->
-    <article class='slide slide-list'>
-      <h2>Variables (cont'd)</h2>
-      <br />
-      <p><img src="assets/computer-memory.jpg" alt="computer-memory" width="200" height="207" style="float:right;padding:0 40px 0 10px;" />Variables are also like the computer's short-term memory. It doesn't remember anything unless you tell it to.  In this example, the computer can't remember any one's name!</p>
-      <p><strong>But it can remember if we use a variable.</strong></p>
-<textarea class='coder-editor coder-editor-full'>SCRIPT
-
-  // prompt() is a function for showing a popup
-  // with an input text field that you can type into
-  prompt("What's your name?");
-
-  // alert() is exactly like prompt()
-  // but doesn't have an input field
-  alert("Hello....?");
-
-  // document.write() also uses the text between the parenthese and quotes
-  // but outputs it directly on the webpage (instead of a popup)
-  document.write("Hello....?");
-
-SCRIPTEND</textarea>
-<script type='coder-solution'>SCRIPT
-
-  // create a VARIABLE called "name"
-  var name;
-
-  // take the text you wrote in the popup input field
-  // and save it to the "name" variable 
-  name = prompt("What's your name?");
-
-  // use the value of "name" and show it in the alert
-  alert(name);
-
-  // also output it directly on the webpage
-  document.write(name);
-
-SCRIPTEND</script>
     </article>
 
     <!-- SLIDE: VARIABLES (cont'd) shipping example -->
@@ -262,11 +231,10 @@ SCRIPTEND</script>
         <img src="assets/var-shipping-example.jpg" width="594" height="193" />
       </p>
     </article>
-
-    
+ 
     <!-- SLIDE: STATEMENTS -->
     <article class='slide slide-list'>
-      <h2>Aside: Statements</h2>
+      <h2>Statements</h2>
       <p>End a <span class="keyword">statement</span> with a semicolon (<code>;</code>).</p>
       <p><strong>Statements</strong> are commands that tell the computer what to do.
         <br />
@@ -275,10 +243,10 @@ SCRIPTEND</script>
         with a period. It tells the computer that the statement is done.
       </p>
       <p>You can also declare a variable and its value in one statement.</p>
-<pre class='prettyprint'>var email;
-email = "hello@christinatruong.com";
+<pre class='prettyprint'>var twitter;
+twitter = "@gavinuhma";
 </pre>
-<pre class='prettyprint'>var email = "hello@christinatruong.com";</pre>
+<pre class='prettyprint'>var twitter = "@gavinuhma";</pre>
     </article>
 
 
@@ -287,28 +255,13 @@ email = "hello@christinatruong.com";
       <h2>Variables: Say My Name</h2>
       <br />
       <p>Let's try creating some variables.</p>
-      <p>Below is an example of a variable for your name. Try creating another variable for your email address.  Output the values using <code>document.write()</code>.</p>
+      <p>Below is an example of a variable for your name. Display the value using <code>document.body.innerHTML</code>.</p>
 <textarea class='coder-editor coder-editor-full'>SCRIPT
 
-  var name = "Christina";
-  document.write(name);
-
-  document.write("<br />"); //just a line break
-
-  // create email variable here
+  var name = "YOUR_NAME_HERE";
+  document.body.innerHTML = name;
 
 SCRIPTEND</textarea>
-<script type='coder-solution'>SCRIPT
-  
-  var name = "Christina";
-  document.write(name);
-
-  document.write("<br />"); //just a line break
-
-  var email = "hello@christinatruong.com";
-  document.write(email);
-
-SCRIPTEND</script>
     </article>
 
      <!-- SLIDE: VARIABLES - assignment operator -->
@@ -325,12 +278,6 @@ SCRIPTEND</script>
       </p>
 
       <p>You will see later that we can re-assign new values to an existing variable.</p>
-
-      <p>
-        <code>total = 1 + 1</code>
-        is not the same as
-        <code>1 + 1 = 2</code>
-      </p>
     </article>
 
     <!-- SLIDE: VARIOUS VARIABLES  -->
@@ -376,9 +323,9 @@ var numberString = "10";
   var greet_me = "Hola, ¿cómo te llamas?";
 
   // test our different variables by outputting them to the page
-  document.write("greetme: " + greetme + "<br />");
-  document.write("greetMe: " + greetme + "<br />");
-  document.write("greet_me: " + greetme + "<br />");
+  document.body.innerHTML = "<div>greetme: " + greetme + "</div>";
+  document.body.innerHTML += "<div>greetMe: " + greetMe + "</div>";
+  document.body.innerHTML += "<div>greet_me: " + greet_me + "</div>";
 
 SCRIPTEND</textarea>
     </article>
@@ -421,7 +368,7 @@ SCRIPTEND</textarea>
   // A variable starting with a number is not valid.
   // A "silent" error will occur -- nothing happens when we press Run.
   var 3hundred = 300;
-  document.write(3hundred);
+  document.body.innerHTML = 3hundred;
 
   // However, when we open up the Chrome console (Alt+Cmd/Ctrl+J),
   // we can see the browser complain of a 
@@ -429,20 +376,21 @@ SCRIPTEND</textarea>
 
   // A variable can start with a $ or _
   var $dalmations = 1001;
-  document.write($dalmations);
+  document.body.innerHTML += $dalmations;
 
 SCRIPTEND</textarea>
 <script type='coder-solution'>SCRIPT
 
   //var 3hundred = 300;
-  //cdocument.write(3hundred);
+  //document.body.innerHTML = 3hundred;
 
   // A variable can start with a $ or _
   var $dalmations = 1001;
-  document.write($dalmations);
+  document.body.innerHTML = $dalmations;
 
 SCRIPTEND</script>
     </article>
+
 
     <!-- SLIDE:  WHITESPACE -->
     <article class='slide slide-list'>
@@ -459,18 +407,38 @@ var name = &quot;Christina&quot;;
 <textarea class='coder-editor coder-editor-full'>SCRIPT
 
   // A test to show whitespace in use 
-  alert("Whitespace in a string.");
-  alert("Whitespace     in    a    string.");
-
   // Remember that browsers ignore extra whitespace in HTML!
   // Use "Inspect Element" to verify that there is indeed whitespace
-  document.write("Whitespace in a string.");
-  document.write("Whitespace     in    a    string.");
+  document.body.innerHTML = "Whitespace in a string.";
+  document.body.innerHTML += " Whitespace     in    a    string.";
 
 SCRIPTEND</textarea>
     </article>
 
-    <!-- SLIDE: GETTING USER INPUT -->
+
+    <!-- SLIDE: COMMENTS -->
+    <article class='slide slide-list'>
+      <h2>Comments in JavaScript</h2>
+      <p>
+        Sometimes you want to write notes to yourself (and others!!) to organize blocks of code or leave explanations. Use comments! <strong>JavaScript will ignore comments and not execute them.</strong>
+      </p>
+<pre class='prettyprint'>
+// This is how you leave a single line comment.
+
+// You can write many single line comments.
+// Just make sure to add the double slash
+// for every new line.
+</pre>
+      <p>Here's another way to comment larger blocks of text.</p>
+<pre class='prettyprint'>
+/* This is how you leave
+multi-line comments for when you
+want to write a longer message */
+</pre>
+      <p>Multi-line comments are great for "hiding" large blocks of code so you can try something new without erasing your old code.</p>    
+    </article>
+
+<!--
     <article class='slide slide-list'>
       <h2>Getting user input</h2>
       <p>
@@ -489,7 +457,6 @@ SCRIPTEND</textarea>
     </article>
 
 
-    <!-- SLIDE: MINI-EXERCISE #1 -->
     <article class='slide slide-list'>
       <h2><div class="smaller">Mini-exercise (5-10 minutes):</div>
         Simple Shipping Label</h2>
@@ -522,26 +489,26 @@ SCRIPTEND</textarea>
 </script></textarea>
       <p class="solution-link">If you get stuck, <a href="exercises/solutions/simple-shipping-label.txt" target="_blank">click here</a> for the full solution.<br />Or if you want to reset, <a href="exercises/solutions/simple-shipping-label-org.txt" target="_blank">click here</a> for the original code.</p>
     </article>
-
+-->
 
     <!-- SLIDE: OPERATORS -->
     <article class='slide slide-list'>
-      <h2>JavaScript Arithmetic Operators</h2>
-      <p>We can also use JavaScript to do math using arithmetic <span class="keyword">operators</span>.</p>
+      <h2>Arithmetic Operators (<a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Arithmetic_Operators" target="_blank">Reference</a>)</h2>
+      <p>We can also use JavaScript to do math using <span class="keyword">arithmetic operators</span>.</p>
       <p>Arithmetic operators in JavaScript are (+) for addition, (-) for subtraction, (*) for multiplication and (\) for division.</p>
 <textarea class='coder-editor coder-editor-full'>SCRIPT
 
-  document.write("Addition: ");
-  document.write(20 + 20);
+  document.body.innerHTML = "Addition: ";
+  document.body.innerHTML += (20 + 20);
 
-  document.write("<br />Subtraction: ");
-  document.write(20 - 20);
+  document.body.innerHTML += "<br />Subtraction: ";
+  document.body.innerHTML += (20 - 20);
 
-  document.write("<br />Multiplication: ");
-  document.write(20 * 20);
+  document.body.innerHTML += "<br />Multiplication: ";
+  document.body.innerHTML += (20 * 20);
 
-  document.write("<br />Division: ");
-  document.write(20 / 20);
+  document.body.innerHTML += "<br />Division: ";
+  document.body.innerHTML += (20 / 20);
 
 SCRIPTEND</textarea>
     </article>
@@ -558,7 +525,7 @@ SCRIPTEND</textarea>
   var androidPrice = 10;
 
   //var totalPrice;
-  //document.write(totalPrice);
+  //document.body.innerHTML = totalPrice;
 
 SCRIPTEND</textarea>
 <script type="coder-solution">SCRIPT
@@ -567,7 +534,7 @@ SCRIPTEND</textarea>
   var androidPrice = 10; 
 
   var totalPrice = tshirtPrice + androidPrice;
-  document.write(totalPrice);
+  document.body.innerHTML = totalPrice;
 
 SCRIPTEND</script>
     </article>
@@ -599,20 +566,20 @@ SCRIPTEND</script>
   /* 1. What is the cost of one t-shirt and one android? */
   var subTotal;
   //subTotal = **********
-  document.write("Sub-Total: " + subTotal);
-  document.write("<br />");
+  document.body.innerHTML = "Sub-Total: " + subTotal;
+  document.body.innerHTML += "<br />";
 
   /* Guess what? Ladies Learning Code students get a percentage discount!
      2. Figure out how much the discount will be. */
   var discountAmount;
   //discountAmount = **********
-  document.write("Discount Amount: " + discountAmount);
-  document.write("<br />");
+  document.body.innerHTML += "Discount Amount: " + discountAmount;
+  document.body.innerHTML += "<br />";
   
   /* 3. Apply the discount to get the final price. */
   var finalTotal;
   //finalTotal = **********
-  document.write("Final Total: " + finalTotal);
+  document.body.innerHTML += "Final Total: " + finalTotal;
 
 </script>
 </textarea>
@@ -631,7 +598,7 @@ SCRIPTEND</script>
   var num1 = 20;
   var num2 = 10;
 
-  document.write(num1 + num2);
+  document.body.innerHTML = num1 + num2;
 
 SCRIPTEND</textarea>
 <script type="coder-solution">SCRIPT
@@ -639,7 +606,7 @@ SCRIPTEND</textarea>
   var num1 = "20";
   var num2 = 10;
 
-  document.write(num1 + num2);
+  document.body.innerHTML = num1 + num2;
 
 SCRIPTEND</script>
     </article>
@@ -650,13 +617,13 @@ SCRIPTEND</script>
       <p>Unlike the other arithmetic operators, the (+) symbol has another purpose other than adding numbers. It is used to join strings together, also known as <span class="keyword">concatenation</span>. You can concatenate variables, strings or a combination of both.</p>  
 <textarea class='coder-editor coder-editor-full'>
 <script>
-  document.write("Hello " + "Christina." + "<br />");
+  document.body.innerHTML = "Hello " + "Christina." + "<br />";
 
   var greeting = "Hello";
   var name = " Pearl.";
-  document.write(greeting + name);
+  document.body.innerHTML += greeting + name;
 
-  document.write("<br />" + greeting + " ladies learning Javascript.");
+  document.body.innerHTML += "<br />" + greeting + " ladies learning Javascript.";
 
 </script>
 </textarea>
@@ -673,17 +640,17 @@ SCRIPTEND</script>
   var tshirtPrice = 25;
   var androidPrice = 10;
   var shoppingTotal = tshirtPrice + androidPrice;
-  document.write(shoppingTotal);
-  document.write("<br />");
+  document.body.innerHTML = shoppingTotal;
+  document.body.innerHTML += "<br />";
 
   //Concatenation with the + operator
-  //document.write("Your total is: " + "$" + shoppingTotal);
-  //document.write("<br />");
+  //document.body.innerHTML += "Your total is: " + "$" + shoppingTotal;
+  //document.body.innerHTML += "<br />";
 
   //no nos
-  //document.write("Your total is:" * shoppingTotal);
-  //document.write("<br />");
-  //document.write("$" + 20 + 1);
+  //document.body.innerHTML += "Your total is:" * shoppingTotal;
+  //document.body.innerHTML += "<br />";
+  //document.body.innerHTML += "$" + 20 + 1;
 </script>
 </textarea>
     </article>
@@ -693,27 +660,23 @@ SCRIPTEND</script>
     <article class='slide slide-list'>
       <h2>Concatenation Practice</h2>
       <p>Let's practice concatenating using variables and strings.</p>
-<textarea class='coder-editor coder-editor-full'>
-<script>
-  var faveFood = prompt("What is your favorite food?");
-  
+<textarea class='coder-editor coder-editor-full'><script>
+  var faveFood = "Spaghetti";
+
   // using the variable "faveFood", update the "sentence"
   // variable to say "My favorite food is ********."
 
   // var sentence = 
-  document.write(sentence);
-</script>
-</textarea>
+  document.body.innerHTML = sentence;
+</script></textarea>
 <script type="coder-solution">SCRIPT
+  var faveFood = "Spaghetti";
 
-  var faveFood = prompt("What is your favorite food?");
-  
-  // using the variable, "faveFood", update the "sentence"
+  // using the variable "faveFood", update the "sentence"
   // variable to say "My favorite food is ********."
 
-  var sentence = ("My favorite food is" + faveFood + ".");
-  document.write(sentence);
-
+  var sentence = "My favorite food is " + faveFood + ".";
+  document.body.innerHTML = sentence;
 SCRIPTEND</script>
     </article>
 
@@ -727,20 +690,94 @@ SCRIPTEND</script>
 
   // Declare and initialize the variable with a default value
   var numberOfCookies = 0;
-  document.write("I started off with " + numberOfCookies + " cookies.<br />");
+  document.body.innerHTML = "I started off with " + numberOfCookies + " cookies.<br />";
   
   // Add 1 to the current value of the variable, 
   // then re-assign the new value to the same variable
   numberOfCookies = numberOfCookies + 1;
-  document.write("I baked a cookie. Now I have " + numberOfCookies + " cookie.<br />");
+  document.body.innerHTML += "I baked a cookie. Now I have " + numberOfCookies + " cookie.<br />";
   
   // Subtract 1 from the current value of the variable, 
   // then (once again) re-assign the new value to the same variable
   numberOfCookies = numberOfCookies - 1;
-  document.write("I just ate a cookie. Now I have " + numberOfCookies + " left."); 
+  document.body.innerHTML += "I just ate a cookie. Now I have " + numberOfCookies + " left.";
 
 SCRIPTEND</textarea>
     </article>
+
+
+<!--
+    <article class='slide slide-list'>
+      <h2>Intro to Functions</h2>
+      <p>
+        Think of a common task...
+      </p>
+      <div>
+        <img src="assets/thumb-down.png" alt="thumb-down" width="32" height="32" style="float:left;margin-bottom:0;padding-right:5px;" />
+        <h3>Exhaustive</h3>
+        <p>
+          I'm going to stand up, walk to the kitchen, search the cupboards for a glass, remove the glass from the cupboard,
+          locate the sink, turn the tap on, make sure the water is cold, put the glass under the water, wait for the water to be 1 cm from the brim,
+          turn the tap off, walk back to this chair, and then pour the water into my mouth. Would you like to do those things too?
+        </p>
+      </div>
+      <div>
+        <img src="assets/thumb-up.png" alt="thumb-up" width="32" height="32" style="float:left;margin-bottom:0;padding-right:5px;" />
+        <h3>Concise</h3>
+        <p>
+          I'm going to <strong>get a drink</strong>. Want one?
+        </p>
+      </div>
+    </article>
+
+    <article class='slide slide-list'>
+      <h2>Intro to Functions</h2>
+      <p>
+        The statement <strong>get a drink</strong> saves us from having to speak every detail of a common task.
+      </p>
+      <p>
+        In JavaScript we often have common code.
+      </p>
+      <p>
+        We wrap common code in a <strong>function</strong> so that we're able to reuse it.
+      </p>
+    </article>
+
+    <article class='slide slide-list'>
+      <h2>Intro to Functions</h2>
+      <br />
+      <p><span class="keyword">Functions</span> are used to make the code "do things."</p>
+      <p>To get the function to execute, you have to <strong>call the function</strong> by using the function name followed by round brackets.</p>
+      <p>If <strong>get a drink</strong> were a function in JavaScript, it could look something like this:</p>
+      <p>
+        <code>
+function getDrink() {
+  standUp();
+  walkToKitchen();
+  findGlass();
+  ...
+  PourWaterIntoMouth();
+}
+        </code>
+      </p>
+    </article>
+
+    <article class='slide slide-list'>
+      <h2>Intro to Functions</h2>
+      <p>We can create our own functions but there are already some handy ones built into JavaScript. There are three functions that are useful for testing and writing code.</p>
+      <p>
+        <code>prompt()</code> and <code>alert()</code> show popups in the browser.
+        <code>document.write()</code> outputs text onto the page, aka the <strong>document</strong>.
+      </p>
+<textarea class='coder-editor coder-editor-full'>SCRIPT
+
+  alert("This is an alert box.");
+  prompt("This is a prompt box. Enter some info.");
+  document.write("document.write outputs text into the page.");
+
+SCRIPTEND</textarea>
+    </article>
+-->
 
 
     <!-- SLIDE: Next section -->
