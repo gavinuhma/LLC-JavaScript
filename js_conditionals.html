@@ -683,73 +683,43 @@ Address:
     <article class='slide slide-list'>
       <h2><div class="smaller">Mini-exercise (15-20 minutes)</div>
         Complex form validation</h2>
-      <p>
-        Now here's a more complex shopping form that you require all fields to be filled in. You have been supplied with 3 additional variables which will automagically update: <code>name</code>, <code>city</code>, and <code>postal</code>.
-      </p>
-      
-      <div class="hint">
-        <p>1. Since there are multiple fields, we'll need to keep track of them. Simplest way would be to use a descriptively named variable that can hold a true or false value.<br />
-        2. Similiar to the previous exercise, use a conditional test so someone cannot supply any blank fields.<br />
-        3. Alert the right message to the user. (Hint: How do you test for something AND something else OR another thing at one time? Try looking at the cheatsheet on <a href="#slide-12" target="_blank">Slide #12</a> of this section.)
-      </div>
+      <p>Now here's a more complex shipping form that require four fields to be filled in.
+        You have been supplied with 3 additional variables: <code>name</code>, <code>city</code>, and <code>postal</code>.</p> 
+      <p><ol>
+        <li>Similiar to the previous exercise, use a conditional test so someone cannot supply any blank fields.</li>
+        <li>Alert the right message to the user. (Hint: How do you test for something AND something else OR another thing at one time?
+        Try looking at the cheatsheet on <a href="#slide-12" target="_blank">Slide #12</a> of this section.)</li>
+      </ol></p>
 
 <textarea class='coder-editor coder-editor-full' data-save='exercise-complex-form-validation'>
 <script>
 function validateForm() {
-
-  // automagically get the typed values from the form
   var name = document.getElementById("name").value;
   var address = document.getElementById("address").value;
   var city = document.getElementById("city").value;
   var postal = document.getElementById("postal").value;
 
-  /* *** YOUR CODE _BELOW_ HERE **** */
+  // Use conditional if/else statements on
+  //  the variables "name", "address", "city", and "postal"
+  //  to determine if any field is blank.
 
-  /* 1. Declare 4 variables named 
-        "nameIsBlank", "addressIsBlank", "cityIsBlank", and "postalIsBlank" 
-        that will each hold Boolean values. */
-
-
-  /* 2a. Use conditional if/else statements on the variables 
-         "name", "address", "city", and "postal" to determine 
-         if each individual field is not blank.
-
-         Update their respective Boolean variables (e.g. "nameIsBlank") 
-         based on their individual if/else statements. */
-
-
-  /* 3. In a final conditional, test ALL FOUR Boolean variables 
-        and alert the proper message. Below are some alerts you can use. */
-
+  // show this message if any fields are blank
   alert( "Sorry there are errors. Form fields cannot be blank!" );
-  alert( "Thank you for your order!" );
 
-  /* *** YOUR CODE ^ABOVE^ HERE **** */
+  // otherwise, show this message
+  alert( "Thank you for your order!" );
 }
 </script>
 
-Name:
-<input type="text" id="name" />
-<br />
-Address:
-<input type="text" id="address" />
-<br />
-City:
-<input type="text" id="city" />
-<br />
-Postal Code:
-<input type="text" id="postal" />
-<br />
+Name: <input type="text" id="name" /><br />
+Address: <input type="text" id="address" /><br />
+City: <input type="text" id="city" /><br />
+Postal Code:<input type="text" id="postal" /><br />
 <br />
 <button onclick="validateForm()">Check out now!</button>
 </textarea>
 
-    <p class="solution-link">If you get stuck, <a href="exercises/solutions/complex-form-validation.txt" target="_blank">click here</a> for  the full solution.<br />Or if you want to reset, <a href="exercises/solutions/complex-form-validation-org.txt" target="_blank">click here</a> for the original code.</p>
-
-      <p>
-        Bonus: There's always different ways to get to the same end goal. If you're finished early, try out different ways that you can reduce the number of variables and lines of code.
-      </p>
-
+    <p class="solution-link">If you get stuck, <a href="exercises/solutions/complex-form-validation.txt" target="_blank">click here</a> for the full solution.<br />Or if you want to reset, <a href="exercises/solutions/complex-form-validation-org.txt" target="_blank">click here</a> for the original code.</p>
     </article>
 
     <!-- SLIDE: Next section -->
