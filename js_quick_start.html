@@ -519,6 +519,7 @@ SCRIPTEND</textarea>
       <p>Getting JavaScript to do math can be very useful.<br />
       For example, we can use it to calculate totals in a shopping cart form.</p>
       <p>Instead of using just numbers, JavaScript can do math using variables with numerical values.</p>
+      <p>Try it, set <code>totalPrice</code> to be <code>tshirtPrice</code> plus (+) <code>androidPrice</code></p>
 <textarea class='coder-editor coder-editor-full'>SCRIPT
 
   var tshirtPrice = 25;
@@ -543,46 +544,36 @@ SCRIPTEND</script>
     <article class='slide slide-list'>
       <h2><div class="smaller">Mini-exercise (5-10 minutes):</div>
         Totals and Discounts</h2>
-      <p style="margin-bottom:0;">Let's pretend that someone has checked out of our online store intending to buy 1 t-shirt and 1 Android plushie. Apply some arithmetic operations to get the final total after applying a discount.</p>
-      <div class="hint">
-        <p>1. Calculate the sub-total given <code>tshirtPrice</code> and <code>androidPrice</code>.
-          <br />
-          2. Calcuate the discount amount given the sub-total and <code>discountPercentage</code>.
-          <br />
-          3. Calcuate the final total given the sub-total and discount amount.
-        </p>
-      </div>
-      <div class="reminders single-line">
-        <p>addition (+), subtraction (-), multiplication (*), division (/)</p>
-      </div>
+      <p>Someone has checked out of our online store attempting to buy <strong>1 t-shirt</strong> and <strong>1 Android plushie</strong>.</p>
+      <p>Apply some arithmetic operations to get the final total after applying a <strong>15% discount</strong>.</p>
+      <p>Steps:
+        <ol>
+          <li>Calculate <code>subTotal</code> given <code>tshirtPrice</code> and <code>androidPrice</code></li>
+          <li>Calcuate <code>discountAmount</code> given <code>subTotal</code> and <code>discountPercentage</code></li>
+          <li>Calcuate <code>finalTotal</code> given <code>subTotal</code> and <code>discountAmount</code></li>
+        </ol>
+      </p>
       <br />
 <textarea class='coder-editor coder-editor-full' data-save='exercise-totals-and-discounts'>
 <script>
-
   var tshirtPrice = 25;
   var androidPrice = 10;
   var discountPercentage = 15;
 
-  /* 1. What is the cost of one t-shirt and one android? */
   var subTotal;
   //subTotal = **********
   document.body.innerHTML = "Sub-Total: " + subTotal;
   document.body.innerHTML += "<br />";
 
-  /* Guess what? Ladies Learning Code students get a percentage discount!
-     2. Figure out how much the discount will be. */
   var discountAmount;
   //discountAmount = **********
   document.body.innerHTML += "Discount Amount: " + discountAmount;
   document.body.innerHTML += "<br />";
-  
-  /* 3. Apply the discount to get the final price. */
+
   var finalTotal;
   //finalTotal = **********
   document.body.innerHTML += "Final Total: " + finalTotal;
-
-</script>
-</textarea>
+</script></textarea>
       <p class="solution-link">If you get stuck, <a href="exercises/solutions/totals-and-discounts.txt" target="_blank">click here</a> for the full solution.<br />Or if you want to reset, <a href="exercises/solutions/totals-and-discounts-org.txt" target="_blank">click here</a> for the original code.</p> 
     </article>
 
@@ -593,10 +584,11 @@ SCRIPTEND</script>
       <p>Remember how there are different variable types?  Arithmetic operators can only be performed on numerical values.</p>
       <p>But numbers can come disguised as strings so be careful!</p>
       <p>When the addition (<code>+</code>) operator is used on strings, it doesn't "add" values, it <span class="keyword">concatenates</span> them.</p>
-<textarea class='coder-editor'>SCRIPT
+      <p>Try it, change num1 to a <strong>string</strong>:</p>
+<textarea class='coder-editor coder-editor-full'>SCRIPT
 
   var num1 = 20;
-  var num2 = 10;
+  var num2 = 13;
 
   document.body.innerHTML = num1 + num2;
 
@@ -604,7 +596,7 @@ SCRIPTEND</textarea>
 <script type="coder-solution">SCRIPT
 
   var num1 = "20";
-  var num2 = 10;
+  var num2 = 13;
 
   document.body.innerHTML = num1 + num2;
 
