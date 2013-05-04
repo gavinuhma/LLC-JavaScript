@@ -1,7 +1,7 @@
 <script>
   var tshirtPrice = 25;
   var androidPrice = 10;
-  var discountPercentage = 15;
+  var discountPercentage = 0.15;
 
   var subTotal;
   subTotal = tshirtPrice + androidPrice;
